@@ -1,237 +1,142 @@
 <!DOCTYPE html>
 <html>
-<!-Task 6->
+
 <head>
   <title>Online Library</title>
-  <!-Task 12->
-  <style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-}
-
-body {
-	width: 100%;
-	height: 100vh;
-   background-color: lightblue;
-	background-image: url();
-	background-size: auto;
-	backdrop-filter: blur(5px);
-	max-width: 1080px;
-	margin-inline: auto;
-	padding-inline: 3rem;
-  color: #000000;
-}
-
-h3 {
-	color: #FFFFFF;
-	width: 100%;
-	font-size: 3rem;
-	text-shadow: 8px 8px 12px black;
-}
-    
-    .styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    }
-    .styled-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-    }
-    .styled-table th,
-    .styled-table td {
-     padding: 12px 15px;
-    }
-    .styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-    }
-
-    .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-    }
-
-    .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-    }
-    .styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-    }
-    button {
-	border: none;
-	border-radius: 11px;
-	color: #000;
-	padding: 12px 23px;
-	text-align: center;
-	font-size: 1rem;
-	font-weight: 600;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-    .button1 {
-	background-color: #4caf50;
-} /* Green */
-</style>
-
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
-  
-<body>
-<!-Task 6->
-    <p>Welcome to my library</p>
-<!-Task 7->
-  <button onclick=myFunction();>Add Book</button>
-<script>
-function myFunction() {
-  alert("Comming Soon !");
-}
-</script>
-<!-Task 8->
-  <h3>Book Table</h3>
-<!-Task 10->
-<table class="styled-table" border="1" bgcolor="#FCF3CF">
-  <!-Task 9->
-  <tr>
-    <th>Book id</th>
-    <th>Book Name</th>
-    <th>Author</th>
-    <th>Price</th>
-    <th>Language</th>
-  </tr>
-<!-Task 11->
-  <tr>
-  <td>01</td>
-  <td>Let us C</td>
-  <td>Yashavant Kanetkar</td>
-  <td>300 INR</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>02</td>
-  <td>Data Structures with C </td>
-  <td>Seymour Lipschutz</td>
-  <td>800 INR</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>03</td>
-  <td> Java: A Beginner’s Guide</td>
-  <td>Herbert Schildt</td>
-  <td>$35.68R</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>04</td>
-  <td>Computer Organization</td>
-  <td> Carl Hamacher</td>
-  <td>800 INR</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>05</td>
-  <td>Python For Beginners</td>
-  <td>Owen Williams</td>
-  <td>699 INR</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>06</td>
-  <td>Artificial Intelligence: A Modern Approach </td>
-  <td>Stuart J. Russell and Peter Norvig.</td>
-  <td>1000 INR</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>07</td>
-  <td>Wings of Fire</td>
-  <td> A. P. J. Abdul Kalam</td>
-  <td>200 INR</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>08</td>
-  <td>A Brief History of Time</td>
-  <td>Stephen Hawking</td>
-  <td>300 INR</td>
-  <td>English</td>
-  </tr>
-  <tr>
-  <td>09</td>
-  <td>Gitanjali</td>
-  <td>Rabindranath Tagore</td>
-  <td>300 INR</td>
-  <td>Bengali</td>
-  </tr>
-  <tr>
-  <td>10</td>
-  <td>Abol tabol </td>
-  <td>Sukumar Ray</td>
-  <td>200 INR</td>
-  <td>Bengali</td>
-  </tr>
-</table>
 
-  <script language="JavaScript" type="Text/JavaScript">
-    var a=document.getElementById('bookname');
-   function myFunction1(){
-      alert(a);
-    }
-  </script>
-<h3>Add Books</h3>
-<br
-<div>
-<form action="javascript:myFunction1();">
-<label for="bookname"><b>Book Name :</b></label>
-<input type="text" name="bookname">
-<br>
-  <label for="author"><b>Author :</b></label>
-<input type="text" name="author">
+<body>
+  <p>Welcome to my library</p>
+  <button onclick=myFunction();>Add Book</button>
+  <h3>Book Table</h3>
+  <table class="styled-table" border="1" bgcolor="#FCF3CF">
+    <tr>
+      <th>Book id</th>
+      <th>Book Name</th>
+      <th>Author</th>
+      <th>Price</th>
+      <th>Language</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>Let us C</td>
+      <td>Yashavant Kanetkar</td>
+      <td>300 INR</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>Data Structures with C </td>
+      <td>Seymour Lipschutz</td>
+      <td>800 INR</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td> Java: A Beginner’s Guide</td>
+      <td>Herbert Schildt</td>
+      <td>$35.68R</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>Computer Organization</td>
+      <td> Carl Hamacher</td>
+      <td>800 INR</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>Python For Beginners</td>
+      <td>Owen Williams</td>
+      <td>699 INR</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>Artificial Intelligence: A Modern Approach </td>
+      <td>Stuart J. Russell and Peter Norvig.</td>
+      <td>1000 INR</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td>Wings of Fire</td>
+      <td> A. P. J. Abdul Kalam</td>
+      <td>200 INR</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>A Brief History of Time</td>
+      <td>Stephen Hawking</td>
+      <td>300 INR</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td>Gitanjali</td>
+      <td>Rabindranath Tagore</td>
+      <td>300 INR</td>
+      <td>Bengali</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Abol tabol </td>
+      <td>Sukumar Ray</td>
+      <td>200 INR</td>
+      <td>Bengali</td>
+    </tr>
+  </table>
+
+
+  <h3>Add Books</h3>
   <br>
-<label for="language" ><b>Language :</b></label>
-<select name="cars" id="cars">
-    <option value="English">English</option>
-    <option value="Bengali">Bengali</option>
-    <option value="Hindi">Hindi</option>
-    <option value="Others">Others</option>
-  </select>
-<br>
-<label for="publisheddate"><b>Published Date :</b></label>
-<input type="date" name="publisheddate">
-<br>
-<label for="Available"><b>Available :</b></label>
-Yes <input type="radio" name="Available" value ="Yes">
-No <input type="radio" name="Available" value ="No">
-<br>
-  <label for="languages" ><b>Languages :</b></label>
-  <br>
-  English <input type="checkbox" name="languages" value="English">
-  <br>
-  Bengali <input type="checkbox" name="languages" value="Bengali">
-  <br>
-  Hindi <input type="checkbox" name="languages" value="Hindi">
-  <br>
-  Others <input type="checkbox" name="languages" value="Others">
-  <br>
-  <label for="briefdescription"><b>Brief Description :</b></label>
-  <br>
-<textarea name="briefdescription">
-</textarea>
-<br>
-<label for="bookprice"><b>Book Price in INR :</b></label>
-<input type="number" name="bookprice">
-<br>
-<button type="Submit" class="button1">Submit</button>
-</form>
-</div>
+  <div>
+    <form action="javascript:myFunction1();">
+      <label for="bookname"><b>Book Name :</b></label>
+      <input type="text" id="bookname" name="bookname">
+      <br>
+      <label for="author"><b>Author :</b></label>
+      <input type="text" id="author" name="author">
+      <br>
+      <label for="language"><b>Language :</b></label>
+      <select name="language" id="language">
+        <option value="English">English</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Others">Others</option>
+      </select>
+      <br>
+      <label for="publisheddate"><b>Published Date :</b></label>
+      <input type="date" id="publisheddate" name="publisheddate">
+      <br>
+      <label for="Available"><b>Available :</b></label>
+      Yes <input type="radio" id="Available" name="Available" value="Yes">
+      No <input type="radio" id="Available" name="Available" value="No">
+      <br>
+      <label for="languages"><b>Languages :</b></label>
+      <br>
+      English <input type="checkbox" id="English" name="languages" value="English">
+      <br>
+      Bengali <input type="checkbox" id="Bengali" name="languages" value="Bengali">
+      <br>
+      Hindi <input type="checkbox" id="Hindi" name="languages" value="Hindi">
+      <br>
+      Others <input type="checkbox" id="Others" name="languages" value="Others">
+      <br>
+      <label for="briefdescription"><b>Brief Description :</b></label>
+      <br>
+      <textarea name="briefdescription" id="briefdescription"></textarea>
+      <br>
+      <label for="bookprice"><b>Book Price in INR :</b></label>
+      <input type="number" id="bookprice" name="bookprice">
+      <br>
+      <button type="Submit" class="button1">Submit</button>
+    </form>
+  </div>
 
 
 </body>
