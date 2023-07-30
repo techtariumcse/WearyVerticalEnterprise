@@ -82,7 +82,11 @@ button {
 }
 
 .button1 {
-  background-color: #4caf50;
+  background-color: #54db43;
+}
+
+.button2 {
+  background-color: #f22c2c;
 }
 
 /* Green */
